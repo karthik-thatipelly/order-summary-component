@@ -1,0 +1,104 @@
+
+@font-face {
+    font-family: 'Red Hat Display-500';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/redhatdisplay/v7/8vIQ7wUr0m80wwYf0QCXZzYzUoTg_T6h.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Red Hat Display-700';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/redhatdisplay/v7/8vIQ7wUr0m80wwYf0QCXZzYzUoTg_T6h.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Red Hat Display-900';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/redhatdisplay/v7/8vIQ7wUr0m80wwYf0QCXZzYzUoTg_T6h.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+.attribution { 
+    font-size: 12px; 
+    text-align: center; 
+}
+
+.attribution a {
+ color: hsl(228, 45%, 44%);
+}
+
+.container {
+
+    display: grid;
+    grid-template: 50px repeat(6,100px) 50px / repeat(15, 100px);
+    padding: 0px 30px;
+}
+.summary{
+    border: 1px solid grey;
+    border-radius: 35px;
+    background-color: white;
+    z-index: 15;
+    grid-area: 2 / 6 / span 6 / span 5;
+    padding: 25px;
+}
+
+.summary h2 {
+    text-align: center;
+    font-family: 'Red Hat Display-900';
+}
+
+.summary p {
+    text-align: center;
+    font-family:'Red Hat Display-500';
+    font-size: 16px;
+}
+
+.price {
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 50px repeat(2, 100px);
+    align-items: center;
+    font-family: 'Red Hat Display-700';
+    margin: 20px;
+}
+
+  .buttons {
+    display: grid;  
+}   
+
+.proceed {
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Red Hat Display-700';
+    
+  }
+
+
+  .cancel {
+    text-align: center;
+    padding: 15px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: 'Red Hat Display-700';
+  }
+
+  span {
+    font-family:'Red Hat Display-700';  
+  }
